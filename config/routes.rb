@@ -5,4 +5,6 @@ Entropic::Application.routes.draw do
 
   match '/about', to: 'static_pages#about'
 
+  match '/api/uuid' => 'api#uuid', :via => [:get]
+
 end
