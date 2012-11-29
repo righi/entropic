@@ -5,6 +5,7 @@ gem 'jquery-rails', '2.0.2'
 
 group :assets do
   gem 'sass-rails', '3.2.5'
+  gem 'bootstrap-sass', '2.2.1.1'
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', '1.2.3'
 end
@@ -12,6 +13,7 @@ end
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
+  gem 'webrat', '0.7.3'
   gem 'guard-rspec', '1.2.1'
   gem 'guard-spork', '1.2.3'
   gem 'spork', '0.9.2'
