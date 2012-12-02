@@ -7,7 +7,7 @@ module Entropy
     end
 
     def initialize
-      @hash = Digest::SHA512.hexdigest("#{rand()}#{ObjectSpace.count_objects.to_s}#{GC.stat.to_s}#{Time.now}")
+      @hash = Digest::SHA512.hexdigest("#{rand()}#{ObjectSpace.count_objects.to_s}#{GC.stat.to_s}#{Time.now}#{SecureRandom.hex(13)}")
       @lock = Mutex.new
     end
 
